@@ -3,8 +3,6 @@
 
 > Fast and rock-solid asynchronous traversing of directories and files for NodeJS
 
-[![Build Status](https://secure.travis-ci.org/thiagodp/fwalker.png)](http://travis-ci.org/thiagodp/fwalker)
-
 This library is a fork of [oleics/node-filewalker](https://github.com/oleics/node-filewalker), created by [Oliver Leics](https://github.com/oleics/node-filewalker#mit-license). Since `node-filewalker` is not maintained anymore, I decided to continue its development here.
 
 This library is designed to provide maximum
