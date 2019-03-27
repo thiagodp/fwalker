@@ -41,7 +41,8 @@
     "fqueue": "0.0.x"
   },
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha -R spec",
+    "postversion": "git push && git push --tags"
   },
   "devDependencies": {
     "memfs": "^2.15.2",
