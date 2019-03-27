@@ -1,6 +1,6 @@
 {
   "name": "fwalker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fast and rock-solid asynchronous traversing of directories and files for NodeJS",
   "keywords": [
     "file",
