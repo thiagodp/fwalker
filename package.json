@@ -1,0 +1,50 @@
+{
+  "name": "fwalker",
+  "version": "1.0.0",
+  "description": "Fast and rock-solid asynchronous traversing of directories and files for NodeJS",
+  "keywords": [
+    "file",
+    "dir",
+    "directory",
+    "directories",
+    "traverse",
+    "list",
+    "walk",
+    "ls",
+    "node",
+    "nodejs",
+    "fs",
+    "fast"
+  ],
+  "author": {
+    "name": "Thiago Delgado Pinto",
+    "email": "thiago-dp@bol.com.br"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thiagodp/fwalker.git"
+  },
+  "contributors": [
+    {
+      "name": "Oliver Leics",
+      "email": "oliver.leics@gmail.com"
+    }
+  ],
+  "main": "./lib/fwalker",
+  "directories": {
+    "lib": "./lib"
+  },
+  "engines": {
+    "node": ">= 0.4.x"
+  },
+  "dependencies": {
+    "fqueue": "0.0.x"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "devDependencies": {
+    "memfs": "^2.15.2",
+    "mocha": "^1.0.3"
+  }
+}
