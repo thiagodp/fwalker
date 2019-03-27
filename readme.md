@@ -21,9 +21,9 @@ npm install --save fwalker
 Simple directory listing and disk-usage report:
 
 ```js
-var filewalker = require('filewalker');
+var fwalker = require('fwalker');
 
-filewalker('.')
+fwalker('.')
   .on('dir', function(p) {
     console.log('dir:  %s', p);
   })
@@ -45,13 +45,13 @@ Calculate md5-hash for every file:
 var started = Date.now();
 
 var createHash = require('crypto').createHash,
-    filewalker = require('./lib/filewalker');
+    fwalker = require('fwalker');
 
 var options = {
   maxPending: 10, // throttle handles
 };
 
-filewalker('/', options)
+fwalker('/', options)
   .on('stream', function(rs, p, s, fullPath) {
     var hash = createHash('md5');
     rs.on('data', function(data) {
