@@ -3,10 +3,15 @@
 
 > Fast and rock-solid asynchronous traversing of directories and files for NodeJS
 
-This library is a fork of [oleics/node-filewalker](https://github.com/oleics/node-filewalker), created by [Oliver Leics](https://github.com/oleics/node-filewalker#mit-license). Since `node-filewalker` is not maintained anymore, I decided to continue its development here.
+👉 This library started as a fork of [node-filewalker](https://github.com/oleics/node-filewalker), created by [Oliver Leics](https://github.com/oleics/node-filewalker#mit-license) which is not maintained anymore.
 
-This library is designed to provide maximum
-reliance paired with maximum throughput/performance.
+**Main differences from `node-filewalker`:**
+
+- New option [`readStream`](https://github.com/thiagodp/fwalker#readstream)
+- New option [`fs`](https://github.com/thiagodp/fwalker#fs)
+- Dependency updates (security fixes)
+
+This library is designed to provide maximum reliance paired with maximum throughput/performance. *Please feel free to contribute!*
 
 ## Installation
 
