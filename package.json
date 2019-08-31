@@ -46,6 +46,6 @@
   },
   "devDependencies": {
     "memfs": "^2.15.2",
-    "mocha": "^1.0.3"
+    "mocha": "^6.2.0"
   }
 }
