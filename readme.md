@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/thiagodp/fwalker.svg?branch=master)](https://travis-ci.org/thiagodp/fwalker)
+[![version](https://img.shields.io/npm/v/fwalker?color=%234CC61E&label=latest%20version)](https://badge.fury.io/js/fwalker)
 
 # fwalker
 
