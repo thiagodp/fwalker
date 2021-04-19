@@ -4,7 +4,7 @@ var FWalker = require('..');
 
 var examplesDir = require('path').resolve(__dirname, 'examples');
 var examplesFile = require('path').resolve(__filename);
-var examplesNumOfDirs = 1;
+var examplesNumOfDirs = 2;
 var examplesNumOfFiles = 2;
 var examplesNumOfBytes = 6;
 
@@ -352,31 +352,32 @@ describe('FWalker', function() {
 
   describe('feature: non-recursive walking', function() {
     var fw;
-    before(function() {
+    beforeEach(function() {
       fw = FWalker(examplesDir, {recursive: false});
     });
-    after(function() {
+    afterEach(function() {
       fw = null;
     });
 
-    it('"done" event without recursive', function(done) {
+    it('computes correctly on "done"', function(done) {
       fw.on('done', function() {
-        // it could be nicer to check the amount using fs on examplesDir
-        // this works, though, given the structure of /examples doesn't change
-        assert.strictEqual(this.files + this.dirs, 2);
+        assert.strictEqual(this.total, 2, 'total');
+        assert.strictEqual(this.dirs,  1, 'dirs');
+        assert.strictEqual(this.files, 1, 'files');
         done();
       });
       fw.walk();
     });
+
   });
 
   describe('feature: use given readStream options', function() {
       var myHighWaterMark = 1024*1024;
       var fw;
-      before(function() {
+      beforeEach(function() {
         fw = FWalker(examplesFile, { readStream: { highWaterMark: myHighWaterMark } } );
       });
-      after(function() {
+      afterEach(function() {
         fw = null;
       });
       it('when "stream", it should be using the given readStream option', function(done) {
